@@ -1,0 +1,26 @@
+extends ./base.pug
+
+block contnet
+    h1 hi
+    
+    p #{errorMsg}
+
+    form(action="/result" method="get")
+        select(name="c")
+            option(value="false") --선택--
+            option(value="검은색") 검은색
+            option(value="흰색") 흰색
+            option(value="삥꾸색") 삥꾸색
+
+        select(name="h")
+            option(value="false") --선택--
+            option(value="120") 120
+            option(value="110") 110
+            option(value="180") 180
+
+        select(name="w")
+            option(value="false") --선택--
+            option(value="180") 180
+            option(value="110") 110
+
+        input(type="submit" value="조회")

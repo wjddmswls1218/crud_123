@@ -1,0 +1,9 @@
+extends ./base.pug
+
+block contnet
+    for desk in list 
+        h1 #{desk.color}
+        h1 #{desk.height} cm
+        h1 #{desk.width} cm
+        hr
+    
